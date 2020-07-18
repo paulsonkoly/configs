@@ -14,7 +14,9 @@ module Configs
     end
 
     def each
-      loaded_yaml.each_value do |yml_data|
+      loaded_yaml.each_pair do |key, yml_data|
+        next if key == 'aliases'
+
         yield(ConfigFile.from_yaml(yml_data))
       end
     end
@@ -22,7 +24,7 @@ module Configs
     private
 
     def loaded_yaml
-      YAML.safe_load(File.read(@yamlfile))
+      YAML.safe_load(File.read(@yamlfile), aliases: true)
     end
   end
 end

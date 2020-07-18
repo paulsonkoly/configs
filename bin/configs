@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'xdg'
+
+require 'bundler/setup'
+require 'configs/settings'
+require 'configs/config_file'
+
+xdg_environment = XDG::Environment.new
+
+CONFIG_FILE = File.join(xdg_environment.config_home, 'configs', 'configs.yml').freeze
+
+Configs::Settings.new(CONFIG_FILE).each(&:call)
