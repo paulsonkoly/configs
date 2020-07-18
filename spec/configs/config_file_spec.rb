@@ -6,14 +6,7 @@ require 'configs/config_file'
 require 'tmpdir'
 
 RSpec.describe Configs::ConfigFile do
-  let(:fake_binding) do
-    binding = nil
-    Object.new.instance_eval do
-      @fake_setting = 'value'
-      binding = self.binding
-    end
-    binding
-  end
+  let(:fake_binding) { { fake_setting: 'value' } }
 
   let(:tmpdir) { Dir.mktmpdir }
 
