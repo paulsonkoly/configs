@@ -1,28 +1,18 @@
 # Configs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/configs`. To experiment with that code, run `bin/console` for an interactive prompt.
+Generates config files (dotfiles) from a single source to the following programs when X starts:
 
-TODO: Delete this and the text above, and describe your gem
+  - polybar
+  - termite
+  - i3
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'configs'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
 
     $ gem install configs
 
 ## Usage
 
-TODO: Write usage instructions here
+Add settings to ~/.config/configs/configs.yml. Execute configs when X starts.
 
 ## Development
 
@@ -32,7 +22,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/configs.
+Bug reports and pull requests are welcome on GitHub at https://github.com/phaul/configs.
 
 
 ## License
