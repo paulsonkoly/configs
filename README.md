@@ -1,10 +1,12 @@
 # Configs
 
-Generates config files (dotfiles) from a single source to the following programs when X starts:
+Generates config files (dotfiles) from a single source for the following programs when X starts:
 
   - polybar
   - termite
   - i3
+
+For example usage see my [dotfiles](http://github.com/phaul/dotfiles)
 
 ## Installation
 
