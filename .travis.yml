@@ -1,6 +1,6 @@
 ---
 language: ruby
-script: bundle exec rake lint:ci_build
+script: bundle exec rake
 cache: bundler
 branches:
   only:
