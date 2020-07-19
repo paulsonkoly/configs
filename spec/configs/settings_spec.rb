@@ -41,5 +41,18 @@ RSpec.describe Configs::Settings do
                               location: 'some_output'
                             ))
     end
+
+    context 'with an aliases section' do
+      let(:fake_yaml) do
+        <<~END_OF_FAKE_YAML
+          ---
+          aliases: "thing"
+        END_OF_FAKE_YAML
+      end
+
+      it 'skips the section for aliases' do
+        expect { |b| subject.each(&b) }.not_to yield_control
+      end
+    end
   end
 end
