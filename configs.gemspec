@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'bin'
   spec.executables   = 'configs'
   spec.require_paths = ['lib']
+
+  spec.add_runtime_dependency 'xdg'
 end
