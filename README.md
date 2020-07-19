@@ -14,7 +14,7 @@ For example usage see my [dotfiles](http://github.com/phaul/dotfiles)
 
 ## Usage
 
-Add settings to ~/.config/configs/configs.yml. Execute configs when X starts.
+Add settings to ~/.config/configs/configs.yml. Execute configs when X starts or wwhen you want to re-generate the config files. Example [configs.yml](https://github.com/phaul/dotfiles/blob/zephyrus/.config/configs/configs.yml) from my dotfiles, and example [templates](https://github.com/phaul/dotfiles/tree/zephyrus/.config/configs/templates).
 
 ## Development
 
