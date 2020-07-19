@@ -1,5 +1,7 @@
 # Configs
 
+[![Build Status](https://travis-ci.org/phaul/configs.svg?branch=master)](https://travis-ci.org/phaul/configs)
+
 Generates config files (dotfiles) from a single source for the following programs when X starts:
 
   - polybar
