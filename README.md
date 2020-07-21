@@ -7,6 +7,7 @@ Generates config files (dotfiles) from a single source for the following program
   - polybar
   - termite
   - i3
+  ...
 
 For example usage see my [dotfiles](http://github.com/phaul/dotfiles)
 
