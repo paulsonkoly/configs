@@ -13,7 +13,15 @@ For example usage see my [dotfiles](http://github.com/phaul/dotfiles)
 
 ## Installation
 
-    $ gem install configs
+The gem is not published on rubygems.org, so gem install won't work. You can circumvent this by using bundler, or you can follow these steps:
+
+    # clone the git repo
+    $ git clone http://github.com/phaul/configs
+    $ cd configs
+    # build the gem
+    $ gem build ./configs.gemspec
+    # install the gem
+    $ gem install configs-*.gem
 
 ## Usage
 
