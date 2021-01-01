@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.executables   = 'configs'
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'xdg', '~> 4.1'
+  spec.add_runtime_dependency 'xdg', '~> 5.0'
 end
